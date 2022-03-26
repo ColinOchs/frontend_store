@@ -1,0 +1,31 @@
+.catalog{
+    background-color: whitesmoke;
+    color: rgb(61, 61, 61);
+}
+
+.catalog h2{
+    font-family: "caveat";
+    font-size: 26px;
+    background-color: rgb(211, 211, 211,.5);
+    border: 1px solid grey;
+    
+}
+h3{
+    background-color: lightblue;
+    color: whitesmoke;
+    font-family: 'Trebuchet MS',  sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: black;
+    font-family: "Shadows Into Light";
+    width:60%;
+    margin:auto;
+    padding: 10px;
+    border: 4px double black;
+    
+}
+p{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}

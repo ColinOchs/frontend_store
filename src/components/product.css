@@ -1,0 +1,67 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    img{
+        border-radius: 3%;
+        height: 40px;
+        width: 40px;
+    }
+
+}
+.product{
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    color: rgb(59, 59, 59);
+    box-shadow: 4px 4px 4px 4px gray;
+    background-color: rgb(240, 240, 240);
+    
+    
+}
+.product img{
+    border-radius: 3%;
+    height: 200px;
+    width: 200px;
+    
+}
+.product img:hover{
+   height:250px;
+   width:250px;
+}
+.product label{
+    display: inline-block;
+    
+}
+.product .price{
+    display: block;
+    border: .5px solid black;
+    font-size: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+ .product .total{
+    display: block;
+    padding: 3px;
+    color: darkmagenta;
+    font-size: 20px;
+}
+.product button{
+    font-size: 18px;
+}
+.product h4{
+    font-size: 14px;
+}
+.product h2{
+    font-family: "caveat";
+    font-size: 25px;
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 40%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+.product .discount{
+    color:red;
+}

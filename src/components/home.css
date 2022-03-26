@@ -1,0 +1,17 @@
+h1{
+    font-size: 40px;
+}
+.home-page{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+img{
+    display: block;
+    object-fit: scale-down;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+.invButton{
+    margin-top: 20px;
+    background-color: whitesmoke;   
+}

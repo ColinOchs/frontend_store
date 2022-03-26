@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lato:wght@300;400;700&family=Roboto:wght@100;400;700&family=Shadows+Into+Light&family=Shizuru&family=Short+Stack&display=swap');
+
 .App {
   text-align: center;
+  background-color: whitesmoke;
 }
 
 .App-logo {
@@ -35,4 +38,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App h1{
+  font-family: "caveat";
+  font-size:38px;
+  text-decoration: 1px underline;
 }
