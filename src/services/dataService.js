@@ -107,6 +107,12 @@ class DataService{
         // return mock data
         return catalog;
     }
+    saveProduct(prod){
+        console.log("sending prod to server");
+    }
+    saveCoupon(coupon){
+        console.log("sending coupon to server");
+    }
 }
 
 export default DataService;
