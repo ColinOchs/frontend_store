@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@100;400;700&family=Shadows+Into+Light&family=Shizuru&family=Short+Stack&display=swap');
+.header h2{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 65px;
+    color: whitesmoke;
+    background-color: black;
+    padding: 20px;
+    -webkit-text-stroke-width: .2px;
+    -webkit-text-stroke-color: black;
+    font-family: "Shadows Into Light";
+    border-radius: 25%;
+   
+    margin-bottom: 20px;
+    
+}

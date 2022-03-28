@@ -1,0 +1,16 @@
+.space{
+    color: whitesmoke;
+    margin-bottom: 40px;
+}
+.history{
+    font-size: 20px;
+    border: 3px double lightblue;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width:60%;
+}
+.about-page{
+    min-height: 79vh;
+}

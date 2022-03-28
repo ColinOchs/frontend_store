@@ -1,0 +1,42 @@
+#home{
+    background-color: whitesmoke;
+}
+.navbar-brand{
+    background-color: whitesmoke;
+    font-family: "shadows into light";
+    
+}
+.container-fluid{
+    background-color: whitesmoke;
+    color:gray;
+   
+}
+.navbar-brand{
+    text-align: center;
+    font-size: 24px;
+}
+.nav-link{
+    font-family: "shadows into light";
+}
+.button{
+    background-color: lightblue;
+}
+.search{
+    background-color: whitesmoke;
+    border-radius: 5%;
+}
+.navbar-brand a:hover{
+    color:lightblue;
+}
+div{
+    text-align: center;
+}
+
+.navbar{
+   border-top: 3px double black;
+    border-bottom: 1px solid black;
+}
+form.d-flex{
+    margin:auto;
+   
+}
