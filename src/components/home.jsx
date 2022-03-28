@@ -11,7 +11,7 @@ const Home = () => {
             <h4>Creative Design Solutions</h4>
             </div>
             <div className='homeImage'>
-            <img src="/images/4-frame.jpg" alt="check us out"></img>
+            <img src="/images/4-frame.jpg" alt="check us out" className='homePic'></img>
             </div>
             <div className='invButton'>
             <Link to="/catalog" className='btn btn-outline-info'>

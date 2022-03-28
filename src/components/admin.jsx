@@ -8,13 +8,13 @@ const Admin = ()=> {
     const[coupon, setCoupon] = useState({});
 
     const handleInputChange = (e) => {
-    var copy = prod;
+    var copy = {...prod};
     copy[e.target.name] = e.target.value;
     setProd(copy);
     };
 
     const handleCCChange = (e) => {
-    var copy = coupon;
+    var copy = {...coupon};
     copy[e.target.name] = e.target.value;
     setCoupon(copy);
     };
@@ -26,22 +26,18 @@ const Admin = ()=> {
         service.saveProduct(prod);
     };
 
-    const saveCoupon = () =>{
+    const saveCoupon = () => {
         console.log(coupon);
 
         let service = new DataService();
         service.saveCoupon(coupon);
     };
 
-
-        //clear data
-      
     return (<div className="admin">
       <section>
+      <div className="form">
         <h3>Register new product</h3>
-
-        <div className="form">
-          <div className="my-control">
+         <div className="my-control">
             <label>Title:</label>
             <input onChange={handleInputChange} name="title" type="text"></input>
           </div>
@@ -57,7 +53,7 @@ const Admin = ()=> {
           </div>
 
           <div className="my-control">
-            <label>Price</label>
+            <label>Price:</label>
             <input onChange={handleInputChange} name="price" type="text"></input>
           </div>
 
@@ -66,20 +62,23 @@ const Admin = ()=> {
           </div>
         </div>
       </section>
-<div className="admin">
-    <div className="form">
+
       <section>
+      <div className="form">
+         <h3>Coupon Codes</h3>
           <div className="my-control">
-        <h3>Coupon Codes</h3>
-        <label>Enter code:</label>
-        <input onChange={handleCCChange} type="text"></input>
-        <button onClick={saveCoupon} className="btn btn-dark">submit coupon</button>
+              <label>Enter code:</label>
+           <input onChange={handleCCChange} type="text"></input>
+           </div>
+           <div className="my-control">
+           <button onClick={saveCoupon} className="btn btn-dark">
+               submit coupon
+            </button>
          </div>
-      
+        </div>     
       </section>
     </div>
-    </div>
-    </div>
-    );
-}
+ );
+};
+
 export default Admin;

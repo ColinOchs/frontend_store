@@ -5,7 +5,7 @@ import "./about.css";
 const About = () => {
 
     const exercise = () =>{
-        console.log("testes testes 1, 2");
+        console.log("Welcome to the console");
 
         const ages = [13,45,74,12,78,23,56,33,72,62,46,18,3,93,10];
 
@@ -18,7 +18,7 @@ const About = () => {
             let num = ages[i];
             total += num;
         }
-            console.log("congratulations!  you can click a button... ",total);
+            console.log("congratulations!  you can click a button... You will go far in life.",total);
           
         };
 
@@ -26,7 +26,9 @@ const About = () => {
         <div className="about-page">
             <h1>Cobblestone Studio</h1>
             <h5>Created by: Colin Ochs</h5>
-            <div className="space">.</div>
+            <div className="space">Check out all this invisible text!</div>
+            <div className="history">
+            Cobblestone Studio was established in 1832 in the county of Loudoun, Virginia.  It has since flourished and become the premier source of design inspiration for millions of creatives and imbiciles alike.  Check out our great inventory.  Behold it's glory, Behold!!!</div>
             <button  type="button" className="btn btn-info" onClick={exercise}>Click Me!</button>
         </div>
     )
