@@ -1,8 +1,10 @@
 import "./navBar.css";
 import { Link } from "react-router-dom";
+import store from "../context/storeContext";
+import { useContext } from "react";
 
 const NavBar  = () => {
-    
+    const cart = useContext(store).cart; //read cart from context
 
     return (<nav className="navbar navbar-expand-lg navbar-light">
     <div className="container-fluid">
@@ -32,9 +34,13 @@ const NavBar  = () => {
         
       </div>
       <form className="d-flex">
-          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
+      <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
           <button className="btn btn-outline-info" type="submit">Search</button>
+          <div className="cartInfo">
+       Cart: {cart.length}
+       </div>
         </form>
+        
     </div>
     
   </nav>)};

@@ -17,11 +17,6 @@
     margin: 0 50px;
   }
   
-  .admin h3 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
   .admin .my-control {
     margin-bottom: 13px;
   }
@@ -39,3 +34,26 @@
   button{
       margin-top: 10px;
   }
+  .admin h3{
+    background-color: rgb(173, 216, 230,.7);
+    color: whitesmoke;
+    font-family: "cursive",  sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: black;
+    font-family: "Shadows Into Light";
+    width:80%;
+    margin:auto;
+    padding: 10px;
+    border: 4px double black;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.coupon-list{
+    color: green;
+}
+.prod-list{
+    color: green;
+}

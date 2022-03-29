@@ -5,7 +5,9 @@ import DataService from '../services/dataService';
 const Admin = ()=> {
 
     const [prod, setProd] = useState({});
-    const[coupon, setCoupon] = useState({});
+    const [coupon, setCoupon] = useState({});
+    const [allCoupons, setAllCoupons] = useState([])
+    const [allProds, setAllProds] = useState([])
 
     const handleInputChange = (e) => {
     var copy = {...prod};
@@ -24,6 +26,10 @@ const Admin = ()=> {
 
         let service = new DataService();
         service.saveProduct(prod);
+
+        let copy = [...allProds];
+        copy.push(prod);
+        setAllProds(copy);
     };
 
     const saveCoupon = () => {
@@ -31,7 +37,14 @@ const Admin = ()=> {
 
         let service = new DataService();
         service.saveCoupon(coupon);
+        //add it to allCoupons
+        //Never Ever => allCoupons.push(coupon)
+
+        let copy =[...allCoupons];
+        copy.push(coupon);
+        setAllCoupons(copy);
     };
+
 
     return (<div className="admin">
       <section>
@@ -61,21 +74,38 @@ const Admin = ()=> {
             <button onClick={saveProduct} className="btn btn-dark">Save Product</button>
           </div>
         </div>
+           
+            {allProds.map((prod, index) => ( <div className="prod-list">{prod.title} - ${prod.price} </div>     ))}
+             
+        {/*title - $price */}
+
+
       </section>
 
       <section>
       <div className="form">
          <h3>Coupon Codes</h3>
           <div className="my-control">
-              <label>Enter code:</label>
-           <input onChange={handleCCChange} type="text"></input>
+              <label>Discount Code:</label>
+           <input onChange={handleCCChange} name="code" type="text"></input>
+                <label>Discount %:</label>
+            <input onChange={handleCCChange} name="discount" type="text"></input>
            </div>
+
            <div className="my-control">
            <button onClick={saveCoupon} className="btn btn-dark">
-               submit coupon
+               Save Coupon Code
             </button>
          </div>
+
         </div>     
+        <div className="coupon-list">
+            {allCoupons.map((coupon, index) => (
+            <div key={index}> 
+                <label> {coupon.code} </label> - <label>{coupon.discount}%</label>
+           </div>
+                ))}
+        </div>
       </section>
     </div>
  );

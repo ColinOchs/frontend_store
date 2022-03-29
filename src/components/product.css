@@ -26,9 +26,9 @@
     
 }
 .product img:hover{
-   height:250px;
-   width:250px;
-}
+    height:205px;
+    width:205px;
+ }
 .product label{
     display: inline-block;
     

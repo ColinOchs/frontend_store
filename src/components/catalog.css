@@ -5,17 +5,18 @@
 
 .catalog h2{
     font-family: "caveat";
-    font-size: 26px;
+    font-size: 30px;
     background-color: whitesmoke;
+    margin-bottom: 20px;
   
     
 }
-h3{
+.catalog h3{
     background-color: lightblue;
     color: whitesmoke;
     font-family: 'Trebuchet MS',  sans-serif;
-    font-weight: 700;
-    font-size: 25px;
+    font-weight: 600;
+    font-size: 30px;
     -webkit-text-stroke-width: .1px;
     -webkit-text-stroke-color: black;
     font-family: "Shadows Into Light";
@@ -23,9 +24,9 @@ h3{
     margin:auto;
     padding: 10px;
     border: 4px double black;
+    margin-bottom: 30px;
     
 }
-p{
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif
+.catalog .space{
+    margin: 50px;
 }
