@@ -14,15 +14,17 @@ import Admin from './components/admin';
 import Contact from './components/contact';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import GlobalState from './context/globalState';
 
 function App() {
   return ( <div className="App">
 
-    <BrowserRouter>
+    <GlobalState>
+     <BrowserRouter>
         <Header></Header>
         <NavBar></NavBar>
 
-      <Routes>
+       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/home' element={<Home />}></Route>
         <Route path="/catalog" element={<Catalog />} ></Route>
@@ -30,10 +32,11 @@ function App() {
         <Route path='/contact' element={<Contact />} ></Route>
         <Route path='/cart' element={<Cart />}></Route>
         <Route path='/admin' element={<Admin />}></Route>
-      </Routes>
+       </Routes>
         
-        <Footer></Footer>
-    </BrowserRouter>
+       <Footer></Footer>
+     </BrowserRouter>
+    </GlobalState>
  </div>
   );
 }
