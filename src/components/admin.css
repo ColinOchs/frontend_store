@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .admin {
     height: auto;
     padding: 20px 10px;
@@ -56,4 +57,64 @@
 }
 .prod-list{
     color: green;
+=======
+.admin {
+    height: auto;
+    padding: 20px 10px;
+    display: flex;
+    background-color: #fafafa;
+    min-height: 79vh;
+  }
+  
+  .admin section {
+    flex: 1;
+  }
+  
+  .admin .form {
+    border: 1px solid #eee;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0 50px;
+  }
+  
+  .admin .my-control {
+    margin-bottom: 13px;
+  }
+  
+  .admin .my-control label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin-right: 7px;
+  }
+  
+  .admin .my-control input {
+    width: 230px;
+  }
+  button{
+      margin-top: 10px;
+  }
+  .admin h3{
+    background-color: rgb(173, 216, 230,.7);
+    color: whitesmoke;
+    font-family: "cursive",  sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: black;
+    font-family: "Shadows Into Light";
+    width:80%;
+    margin:auto;
+    padding: 10px;
+    border: 4px double black;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.coupon-list{
+    color: green;
+}
+.prod-list{
+    color: green;
+>>>>>>> 323943c13d6993301b94ca4eb51962f7e7c9bd9e
 }

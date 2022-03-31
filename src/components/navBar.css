@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #home{
     background-color: whitesmoke;
 }
@@ -49,4 +50,57 @@ form.d-flex{
     border-radius: 10%;
   padding-left: 5px;
   padding-right: 5px;
+=======
+#home{
+    background-color: whitesmoke;
+}
+.navbar-brand{
+    background-color: whitesmoke;
+    font-family: "shadows into light";
+    
+}
+.container-fluid{
+    background-color: whitesmoke;
+    color:gray;
+   
+}
+.navbar-brand{
+    text-align: center;
+    font-size: 24px;
+}
+.nav-link{
+    font-family: "shadows into light";
+   
+}
+.button{
+    background-color: lightblue;
+}
+.search{
+    background-color: whitesmoke;
+    border-radius: 5%;
+}
+.navbar-brand a:hover{
+    color:lightblue;
+}
+div{
+    text-align: center;
+}
+
+.navbar{
+   border-top: 3px double black;
+    border-bottom: 1px solid black;
+}
+form.d-flex{
+    margin:auto;
+   
+}
+.cartInfo{
+    background-color: gray;
+    color: white;
+    margin-left: 50px;
+    border:1px solid grey;
+    border-radius: 10%;
+  padding-left: 5px;
+  padding-right: 5px;
+>>>>>>> 323943c13d6993301b94ca4eb51962f7e7c9bd9e
 }

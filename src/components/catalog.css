@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .catalog{
     background-color: whitesmoke;
     color: rgb(61, 61, 61);
@@ -29,4 +30,37 @@
 }
 .catalog .space{
     margin: 50px;
+=======
+.catalog{
+    background-color: whitesmoke;
+    color: rgb(61, 61, 61);
+}
+
+.catalog h2{
+    font-family: "caveat";
+    font-size: 30px;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+  
+    
+}
+.catalog h3{
+    background-color: lightblue;
+    color: whitesmoke;
+    font-family: 'Trebuchet MS',  sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: black;
+    font-family: "Shadows Into Light";
+    width:60%;
+    margin:auto;
+    padding: 10px;
+    border: 4px double black;
+    margin-bottom: 30px;
+    
+}
+.catalog .space{
+    margin: 50px;
+>>>>>>> 323943c13d6993301b94ca4eb51962f7e7c9bd9e
 }

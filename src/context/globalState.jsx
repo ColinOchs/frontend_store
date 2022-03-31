@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import store from "./storeContext";
 import { useState } from "react";
 
@@ -45,4 +46,39 @@ const GlobalState = (props) => {
     );
 };
 
+=======
+import store from "./storeContext";
+import { useState } from "react";
+
+const GlobalState = (props) => {
+    const [cart, setCart] = useState([]);
+    const[loggedInUser, setLoggedInUser] = useState({});
+
+    const addProdToCart = (prod) => {
+        console.log("adding prod to state");
+
+        let copy = [...cart];
+        copy.push(prod);
+        setCart(copy);
+    };
+
+    const removeProdFromCart = () => {
+        console.log("removing prod from state");
+    };
+
+    return (
+        <store.Provider
+         value={{
+            cart: cart,
+            user: loggedInUser,
+            addProdToCart: addProdToCart,
+            removeProdFromCart: removeProdFromCart,
+            }}
+         >
+            {props.children}
+        </store.Provider>
+    );
+};
+
+>>>>>>> 323943c13d6993301b94ca4eb51962f7e7c9bd9e
 export default GlobalState;
