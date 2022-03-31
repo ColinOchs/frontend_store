@@ -17,29 +17,12 @@
     
 
 }
-.footer h4{
-    font-size: 12px;
-    text-decoration: 2px overline;
-    text-decoration-color: lightblue;
-    -webkit-text-stroke-width: .3px;
-    -webkit-text-stroke-color:black;
-    
-    
-}
+
 .footer p{
-   font-family: lato;
-    font-size: 22px;
-    color: white;
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color:black;
-   
-}
-.footer h5{
-    font-size: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: gray;
-    color:whitesmoke;
-   
-}
+    font-family: lato;
+     font-size: 22px;
+     color: white;
+     -webkit-text-stroke-width: .5px;
+     -webkit-text-stroke-color:black;
+    
+ }

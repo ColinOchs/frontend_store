@@ -19,9 +19,8 @@ const Catalog = () => {
     } );
 
     return (<div className="catalog">
-        <p>...</p>
-        <h2>Please check out our available product line, updated seasonally:</h2>
-        <h2>framed prints, calendars, and print collections...</h2>
+        <div className='space'></div>
+        <h2>Please check out our available product line, updated seasonally:<br></br>framed prints, calendars, and print collections...</h2>
         
         <h3>We have {products.length} available product designs!</h3>
         {

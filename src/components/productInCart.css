@@ -1,0 +1,24 @@
+.prod-cart{
+    background-color: rgb(211, 211, 211,.3);
+    border: 1px solid lightgrey;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.prod-cart img{
+    flex:1;
+    height: 90px;
+}
+.prod-cart .info{
+    flex: 6;
+
+}
+.prod-cart .label{
+    flex: 1;
+}
+.prod-cart button{
+    flex: .4;
+}
+.prod-cart{
+    
+}

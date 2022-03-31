@@ -2,5 +2,22 @@
 padding: 40px;
 margin: 50px;
 background-color: white;
-border: 4px double gray;
+border: 1px solid lightgray;
+height: auto;
+
+background-color: #fafafa;
+min-height: 79vh;
+text-align: center;
+}
+
+.shoppingCart .products{
+    display: grid;
+
+}
+.shoppingCart .products .product{
+    margin: 10px;
+}
+.shoppingCart .products .product h5{
+    font-size: 30px;
+    font-family: cursive;
 }

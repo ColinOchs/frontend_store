@@ -5,13 +5,16 @@ h1{
     margin-top: 20px;
     margin-bottom: 100px;
 }
-img{
-    display: block;
-    object-fit: scale-down;
-    border-radius: 50%;
-    border: 1px solid gray;
-}
+
 .invButton{
     margin-top: 20px;
     background-color: whitesmoke;   
 }
+.homePic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height:auto;
+    border-radius: 50%;
+  }
