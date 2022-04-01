@@ -4,21 +4,29 @@
     margin-bottom: 15px;
     display: flex;
     align-items: center;
+    font-family: cursive;
+    
 }
 .prod-cart img{
     flex:1;
     height: 90px;
+    border-radius: 10%;
+    padding: 5px;
 }
 .prod-cart .info{
     flex: 6;
 
 }
-.prod-cart .label{
-    flex: 1;
+.prod-cart label{
+    flex: 4;
+    
+}
+.price {
+   
+}
+.quantity{
+    
 }
 .prod-cart button{
     flex: .4;
-}
-.prod-cart{
-    
 }

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import './cart.css';
 import store from '../context/storeContext';
 import { useContext } from 'react';
@@ -34,24 +33,3 @@ export default Cart;
 
 
 
-=======
-import './cart.css';
-
-
-const  Cart = () => {
-    return (
-        
-        <div className='shoppingCart'>
-           <h1>Shopping Cart</h1>
-           
-           
-        </div>
-
-    )
-}
-
-export default Cart
-
-
-
->>>>>>> 323943c13d6993301b94ca4eb51962f7e7c9bd9e

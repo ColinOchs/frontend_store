@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .shoppingCart{
 padding: 40px;
 margin: 50px;
@@ -22,30 +21,3 @@ text-align: center;
     font-size: 30px;
     font-family: cursive;
 }
-=======
-.shoppingCart{
-padding: 40px;
-margin: 50px;
-background-color: white;
-border: 1px solid lightgray;
-height: auto;
-
-background-color: #fafafa;
-min-height: 79vh;
-text-align: center;
-}
-
-.shoppingCart ul{
-    display: block;
-    list-style-type: none;
-    font-family: cursive;
-    padding: 10px;
-}   
-.shoppingCart li{
-    margin: 10px 0;
-    padding: 10px;
-    border: .5px dotted lightblue;
-    background-color: whitesmoke;
-  }
-  
->>>>>>> 323943c13d6993301b94ca4eb51962f7e7c9bd9e
