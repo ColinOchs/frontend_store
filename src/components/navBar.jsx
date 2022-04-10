@@ -49,7 +49,7 @@ const NavBar  = () => {
           <button className="btn btn-outline-info" type="submit">Search</button>
 
        <div className="cartInfo">
-          <Link  aria-current="page" to="/cart" class="btn btn-info"  >
+          <Link  aria-current="page" to="/cart" className="btn btn-info"  >
           <span className="badge bg-info">🛒 {getNumber()}</span> </Link>
        </div>
      </form>

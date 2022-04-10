@@ -29,3 +29,17 @@ run server:
 
  (nth time):"
  git push
+
+
+#activate virtual environment
+venv\Scripts\activate
+
+python (file).py
+
+#activate VSCode
+code .
+
+# packages for DB connection
+python -m pip install Flask-PyMongo
+python -m pip install "pymongo[srv]"
+python -m pip install certifi
