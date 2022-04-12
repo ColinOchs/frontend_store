@@ -93,7 +93,10 @@ const Admin = ()=> {
           </div>
         </div>
            
-            {allProds.map((prod, index) => ( <div className="prod-list">{prod.title} - ${prod.price} </div>     ))}
+            {allProds.map((prod, index) => (
+               <div className="prod-list" key={index}>
+                 {prod.title} - ${prod.price} 
+                 </div>     ))}
              
         {/*title - $price */}
 
