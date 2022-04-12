@@ -118,8 +118,9 @@ class DataService{
         return resp.data;
     }
 
-    saveProduct(prod){
-        ;
+    async saveProduct(prod){//new
+        let resp = await axios.post("http://127.0.0.1:5000/api/catalog", prod);
+        return resp.data;  //new ;
     }
     async saveCoupon(coupon){
         let resp = await axios.post("http://127.0.0.1:5000/api/couponCode", coupon);

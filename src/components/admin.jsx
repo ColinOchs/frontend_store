@@ -21,11 +21,11 @@ const Admin = ()=> {
     setCoupon(copy);
     };
 
-    const saveProduct = () =>{
+    const saveProduct = async() =>{
         console.log(prod);
 
         let service = new DataService();
-        service.saveProduct(prod);
+        let resp = await service.saveProduct(prod);
 
         let copy = [...allProds];
         copy.push(prod);
@@ -35,15 +35,15 @@ const Admin = ()=> {
     const saveCoupon = async() => {
         console.log(coupon);
 
-        let fixed = { ...coupon};
-        fixed.discount = parseInt(coupon.discount);
 
+        let fixed = { ...coupon};
+        fixed.discount = parseInt(coupon.discount);//change discount to integer
         console.log(fixed);
 
         let service = new DataService();
         let resp = await service.saveCoupon(fixed);
-        
-        service.saveCoupon(coupon);
+
+        service.saveCoupon(fixed);
         //add it to allCoupons
         //Never Ever => allCoupons.push(coupon)
 
@@ -58,6 +58,7 @@ const Admin = ()=> {
       setAllCoupons(all);
     };
 
+    //when the component loads   
     useEffect(() => {
       loadCoupons();
     }, []);
